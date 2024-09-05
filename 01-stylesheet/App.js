@@ -1,10 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, ScrollView, TextInputComponent } from 'react-native';
+import { useState } from 'react';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
+
 
 export default function App() {
+
+  const [name, setName] = useState('');
+
   return (
     <View style={styles.container}>
       <Header/>
+      <TextInput
+        style={styles.input}
+        placeholder='Digite seu nome'
+        value={name}
+        onChangeText={text => setName(text)}></TextInput>
+      <Text style={[styles.logoName, styles.nome]}>Nome: {name}</Text>
       <View style={styles.boxesContainer}>
         <View style={styles.redBox}></View>
         <View style={styles.whiteBox}></View>
@@ -28,7 +39,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: '#333',
     flex: 1,
-    paddingTop: 20
+    paddingTop: 50
   },
   
   header: {
@@ -45,7 +56,8 @@ const styles = StyleSheet.create({
 
   logoName: {
     fontSize: 36,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    color: 'white'
   },
 
   boxesContainer: {
@@ -57,20 +69,36 @@ const styles = StyleSheet.create({
 
   redBox: {
     width: 100,
-    height: 700,
+    height: 200,
     backgroundColor: '#870a28'
   },
 
   whiteBox: {
     width: 100,
-    height: 700,
+    height: 200,
     backgroundColor: '#ffffff'
   },
 
   greenBox: {
     width: 100,
-    height: 700,
+    height: 200,
     backgroundColor: '#006136'
-  }
+  },
 
+  input: {
+    borderWidth: 3,
+    borderColor: '#870a28',
+    backgroundColor: '#ffffff',
+    justifyContent: 'center',
+    width: 300,
+    fontSize: 24,
+    marginLeft: 20,
+    marginTop: 20,
+    padding: 5,
+    borderRadius: 50
+  },
+
+  nome: {
+    marginLeft: 20,
+  }
 });
