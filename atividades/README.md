@@ -1,8 +1,8 @@
 <h1>Atividades</h1>
 
-<ol>
+<ul>
     <li>
-        <h3>FortuneCookie App</h3>
+        <h3>1. FortuneCookie App</h3>
         <span>
             Desenvolva um aplicativo chamado FortuneCookie onde o usuário pode “quebrar”
             um biscoito virtual e receber uma frase de sorte (fortune) aleatória. O app deve
@@ -14,7 +14,7 @@
     </li>
     <hr>
     <li>
-        <h3>QuotesApp</h3>
+        <h3>2. QuotesApp</h3>
         <span>
             Crie um aplicativo chamado QuotesApp que exibe citações motivacionais ou
             inspiradoras. Cada citação deve vir acompanhada de uma imagem do autor da
@@ -26,7 +26,7 @@
     </li>
     <hr>
     <li>
-    <h3>Cronômetro App</h3>
+    <h3>3. Cronômetro App</h3>
         <span>
             Desenvolva um aplicativo de cronômetro simples chamado Cronômetro, com as
             funções de iniciar, pausar e reiniciar. O cronômetro deve exibir o tempo decorrido
@@ -35,7 +35,7 @@
     </li>
     <hr>
     <li>
-        <h3>Contador Restaurante App</h3>
+        <h3>4. Contador Restaurante App</h3>
         <span>
             Crie um aplicativo chamado Contador Restaurante que ajuda um restaurante a
             contar o número de pessoas que entram e saem. O app deve ter dois botões: um
@@ -43,4 +43,4 @@
             total de pessoas presentes no restaurante deve ser atualizado em tempo real.
         </span>
     </li>
-</ol>
+</ul>
