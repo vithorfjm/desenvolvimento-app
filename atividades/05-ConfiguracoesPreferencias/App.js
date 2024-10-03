@@ -12,7 +12,7 @@ export default function App() {
 
   const resetar = () => {
     setTemaEscuroAtivado(false);
-    setTamanhoFonte(24)
+    setTamanhoFonte(24) // Achei que 12 ficou muito pequeno e coloquei 24 como padrão
   }
 
   return (
