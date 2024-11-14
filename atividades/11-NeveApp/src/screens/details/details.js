@@ -10,7 +10,7 @@ const Details = () => {
             <Text style={styles.text}>DETAILS:</Text>
             <Button
                 title="HOME"
-                onPress={() => navigation.goBack()}/>
+                onPress={() => navigation.popToTop()}/>
         </View>
     );
 }
